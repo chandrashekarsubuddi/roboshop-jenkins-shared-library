@@ -1,6 +1,4 @@
-def call() {
-
-    def abc = "Hello"
+def abc = "Hello"
     def xyz = 10
 
     print "abc = ${abc}"
@@ -8,5 +6,5 @@ def call() {
 
     print abc
 
-}
+
 
