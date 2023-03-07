@@ -1,7 +1,12 @@
-def abc = "Hello"
-def xyz = 10
+def call() {
 
-print "abc = ${abc}"
-print "xyz = ${xyz}"
+    def abc = "Hello"
+    def xyz = 10
 
-print abc
+    print "abc = ${abc}"
+    print "xyz = ${xyz}"
+
+    print abc
+
+}
+
