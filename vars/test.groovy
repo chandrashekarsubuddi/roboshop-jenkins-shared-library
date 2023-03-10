@@ -18,4 +18,13 @@ def new1() {
         y++
 
     }
+
+    for(int i = 0;i<5;i++) {
+        println(i);
+    }
+    def fruits = ["apple","banana","orange"];
+
+    for(i in fruits) {
+        println(i);
+    }
 }
