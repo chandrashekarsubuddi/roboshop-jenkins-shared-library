@@ -6,7 +6,8 @@ def new1() {
 
     if ( abc == "Some Data") {
         print "YES"
-    } else {
+    }
+    else {
         print "NO"
     }
 }
