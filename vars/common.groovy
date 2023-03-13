@@ -1,6 +1,7 @@
 def compile() {
     if (app_lang == "nodejs") {
         sh 'npm install'
+        sh 'env'
     }
 
     if (app_lang == "maven") {
@@ -26,6 +27,6 @@ def unittests() {
 
 
 def email(email_note) {
-    sh 'env'
+
     mail bcc: '', body: 'Job Failed : ', cc: '', from: 'chandrashekar185@gmail.com', replyTo: 'chandrashekar185@gmail.com', subject: 'TEST FROM JENKINS', to: 'chandrashekar185@gmail.com'
 }
