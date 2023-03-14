@@ -27,7 +27,7 @@ def call() {
 
               stage('Quality Control') {
                   steps {
-                      echo 'Quality Control'
+                      sh 'sonar-scanner -Dsonar.host.url=http://172.31.4.40:9000 -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectKey=cart'
                   }
               }
               stage('Upload Code to Centralized Place') {
