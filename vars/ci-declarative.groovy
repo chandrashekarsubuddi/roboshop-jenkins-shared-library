@@ -1,6 +1,9 @@
 def call() {
     try {
         node('workstation') {
+            stage('Cleanup') {
+                cleanWs()
+            }
             stage('compile/Build') {
                 common.compile()
             }
