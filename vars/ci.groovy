@@ -3,7 +3,7 @@ def call() {
         node('workstation') {
             stage('Checkout') {
                 cleanWs()
-                git branch: 'main', url: 'https://github.com/chandrashekarsubuddi/cart.git'
+                git branch: 'main', url: 'https://github.com/chandrashekarsubuddi/${component}.git'
             }
             stage('compile/Build') {
                 common.compile()
