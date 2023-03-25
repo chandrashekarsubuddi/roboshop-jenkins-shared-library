@@ -31,3 +31,10 @@ def email(email_note) {
     mail bcc: '', body: "Job Failed - ${JOB_BASE_NAME}\nJenkins URL - ${JOB_URL}", cc: '', from: 'shekarchandra2k11@gmail.com', replyTo: '', subject: "Jenkins job failed - ${JOB_BASE_NAME}", to: 'shekarchandra2k11@gmail.com'
 //    mail bcc: '', body: "Job Failed - ${JOB_BASE_NAME}\nJenkins URL - ${JOB_URL}", cc: '', from: 'shekarchandra2k11@gmail.com', replyTo: 'shekarchandra2k11@gmail.com', subject: "Job Failed - ${JOB_BASE_NAME}\\nJenkins URL - ${JOB_URL}", to: 'shekarchandra2k11@gmail.com'
 }
+
+def artifactPush() {
+    if (app_lang == "nodejs") {
+        zip -r cart-${TAG_NAME}.zip node_modules server.js
+    }
+    sh 'ls -l '
+}
